@@ -1,0 +1,65 @@
+/* Root  */
+:root {
+  --lightblue: #b4d0e7;
+  --blue: #0061ff;
+  --winered: #61082b;
+}
+
+/* Reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Generics  */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* Header  */
+
+.nav-header {
+  justify-content: space-between;
+  height: 80px;
+}
+
+.nav-header img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.nav-options {
+  align-items: center;
+}
+.nav-options a {
+  margin: 0 20px;
+}
+
+/* Buttons  */
+
+.btn {
+  color: white;
+  background-color: var(--blue);
+  padding: 7px 15px;
+}
+
+/* Utilities */
+.flex {
+  display: flex;
+}
+.container-lg {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container-md {
+  width: 800px;
+  margin: 0 auto;
+}
+/* Debug */
+.debug {
+  border: 2px dashed black;
+}
