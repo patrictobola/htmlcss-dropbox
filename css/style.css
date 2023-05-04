@@ -80,7 +80,7 @@ p {
 .jumbo-description i {
   font-size: 3rem;
   position: absolute;
-  bottom: 100px;
+  bottom: 20px;
   left: 0;
 }
 .jumbo-pic img {
@@ -326,7 +326,7 @@ p {
 
 /* Container  */
 .wrap-lg {
-  max-height: 750px;
+  height: 750px;
   background-color: var(--lightblue);
 }
 .wrap-sm {
