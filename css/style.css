@@ -1,8 +1,15 @@
 /* ! Root  */
 :root {
   --lightblue: #b4d0e7;
+  --skyblue: #0093ce;
   --blue: #0061ff;
+  --darkblue: #0d2481;
+  --lightgreen: #a2d39b;
+  --red: #ff1c1c;
+  --darkred: #d5001f;
   --winered: #61082b;
+  --yellow: #ffd830;
+  --gray: #f5f5f5;
 }
 
 /*  ! Reset  */
@@ -59,7 +66,7 @@ p {
 
 /* ! Main  */
 
-/* Jumbotron  */
+/* * Jumbotron  */
 .jumbo-title {
   height: 45%;
 }
@@ -198,16 +205,6 @@ p {
   margin: 20px 0;
 }
 
-.a-reset {
-  color: blue;
-  text-decoration: underline;
-}
-.break-line {
-  width: 50px;
-  margin: 40px 0;
-  border-bottom: 1px solid lightgray;
-}
-
 /* * Dropbox Uses section  */
 .prod-info h2 {
 }
@@ -240,7 +237,7 @@ p {
   margin-bottom: 80px;
 }
 
-/* Sponsor section  */
+/* * Sponsor section  */
 .sponsor-col-ext {
   flex-basis: calc(100% / 3);
   height: 640px;
@@ -252,16 +249,88 @@ p {
 .sponsor-col-int {
   width: 50%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.sponsor-row img {
+  width: 50%;
+}
+.sponsor-col-ext.center {
+  padding: 50px;
+  background-color: var(--gray);
+}
+.sponsor-col-ext.center p {
+  margin-bottom: 50px;
+}
+.sponsor-col-ext.center img {
+  width: 50%;
 }
 
+/* * Business Free try section  */
+.container-md.business {
+  padding: 130px 0;
+  justify-content: space-between;
+}
+.container-md.business h2 {
+  color: var(--winered);
+}
+.business .btn-lg a {
+  margin: 0;
+  background-color: white;
+  color: black;
+}
+
+/* * Frequent Questions  */
+
+.questions-section h2 {
+  margin: 20px 0;
+}
+
+.question-hidden {
+  display: none;
+}
+
+.answer {
+  text-align: end;
+}
+.answer i {
+  cursor: pointer;
+}
+.question:hover h4 {
+  display: block;
+  margin-top: 20px;
+}
 /* ! Utilities */
 .flex {
   display: flex;
 }
+.a-reset {
+  color: blue;
+  text-decoration: underline;
+}
+.break-line {
+  width: 50px;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
+.break-line-lg {
+  width: 100px;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
+.break-line-xxl {
+  width: 100%;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
 
 /* Container  */
 .wrap-lg {
-  height: 750px;
+  min-height: 750px;
+  background-color: var(--lightblue);
+}
+.wrap-sm {
+  height: 350px;
   background-color: var(--lightblue);
 }
 .container-lg {
@@ -299,11 +368,23 @@ p {
   color: white;
 }
 /* Columns  */
+.col-xs {
+  width: 15%;
+}
 .col-sm {
   width: 40%;
 }
 .col-md {
   width: 60%;
+}
+.col-xs {
+  width: 30%;
+}
+.col-lg {
+  width: 70%;
+}
+.col-xl {
+  width: 85%;
 }
 
 /* Card Border */
@@ -316,7 +397,49 @@ p {
   border-right: 1px solid lightgray;
 }
 
+/* Background Colors */
+.lightblue {
+  background-color: var(--lightblue);
+}
+.blue {
+  background-color: var(--blue);
+}
+.skyblue {
+  background-color: var(--skyblue);
+}
+.lightgreen {
+  background-color: var(--lightgreen);
+}
+.winered {
+  background-color: var(--winered);
+}
+.red {
+  background-color: var(--red);
+}
+.darkred {
+  background-color: var(--darkred);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.darkblue {
+  background-color: var(--darkblue);
+}
+.gray {
+  background-color: var(--gray);
+}
 /* Debug */
 .debug {
   border: 2px dashed black;
 }
+
+/* 
+--lightblue: #b4d0e7;
+--skyblue: #0093ce;
+--blue: #0061ff;
+--darkblue: #0d2481;
+--lightgreen: #a2d39b;
+--red: #ff1c1c;
+--darkred: #d5001f;
+--winered: #61082b;
+--yellow: #ffd830; */
