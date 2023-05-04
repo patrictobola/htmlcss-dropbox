@@ -240,6 +240,20 @@ p {
   margin-bottom: 80px;
 }
 
+/* Sponsor section  */
+.sponsor-col-ext {
+  flex-basis: calc(100% / 3);
+  height: 640px;
+}
+.sponsor-row {
+  width: 100%;
+  height: 50%;
+}
+.sponsor-col-int {
+  width: 50%;
+  height: 100%;
+}
+
 /* ! Utilities */
 .flex {
   display: flex;
