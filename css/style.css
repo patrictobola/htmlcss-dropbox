@@ -77,12 +77,19 @@ img {
 
 .nav-header img {
   vertical-align: middle;
+  height: 100%;
 }
 .nav-options {
   align-items: center;
 }
-.nav-options a {
-  margin: 0 20px;
+.nav-options-right a {
+  padding: 29px 20px;
+}
+.nav-options-left a {
+  padding: 31px 20px;
+}
+.nav-options a:hover {
+  box-shadow: inset 0 -3px 0px 0 cornflowerblue;
 }
 
 /* ! Main  */
@@ -396,6 +403,10 @@ footer h3 {
   text-align: center;
   display: inline-block;
 }
+.btn-lg a:hover,
+.btn-xs:hover {
+  opacity: 0.8;
+}
 .btn-xs {
   color: white;
   background-color: var(--blue);
@@ -407,6 +418,10 @@ footer h3 {
   padding: 15px;
   display: inline-block;
   margin-top: 20px;
+}
+.btn-partner a:hover {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0px 10px black;
 }
 
 .btn-lg a {
