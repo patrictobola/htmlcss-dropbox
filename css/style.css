@@ -50,6 +50,11 @@ h2 {
   font-size: 2.5rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
 p {
   line-height: 1.3;
   font-size: 1.1rem;
@@ -112,7 +117,6 @@ img {
   margin-bottom: 50px;
 }
 .plan-header h2 {
-  font-size: 2.5rem;
   padding: 50px 0;
 }
 .plan-header span {
@@ -163,9 +167,6 @@ img {
   flex-direction: column;
   margin-bottom: 30px;
 }
-.plan-type h2 {
-  margin-bottom: 20px;
-}
 .plan-type span {
   padding-bottom: 10px;
 }
@@ -192,10 +193,8 @@ img {
 .plan-offer-list {
   margin-bottom: 20px;
 }
+
 /* Plan offer large content  */
-.plan-col-lg.content h2 {
-  margin-bottom: 20px;
-}
 .plan-col-lg.content h4 {
   margin-bottom: 50px;
 }
@@ -222,8 +221,6 @@ img {
 }
 
 /* * Dropbox Uses section  */
-.prod-info h2 {
-}
 .prod-info-row {
   flex-basis: 100%;
   margin-top: 70px;
@@ -236,7 +233,6 @@ img {
   width: 100%;
 }
 .prod-info-card h3 {
-  font-size: 1.5rem;
   line-height: 1.4;
   margin-bottom: 30px;
 }
@@ -246,8 +242,8 @@ img {
 .prod-info-business-users {
   padding: 200px 0 150px 0;
 }
-.prod-info-business-users h2 {
-  margin-bottom: 80px;
+/* .prod-info-business-users h2 {
+  margin-bottom: 80px; */
 }
 .prod-info-business-users a {
   margin-bottom: 80px;
@@ -255,21 +251,24 @@ img {
 
 /* * Sponsor section  */
 .sponsor-col-ext {
-  flex-basis: calc(100% / 3);
-  height: 640px;
+  flex-basis: calc(100vw / 3);
+  height: calc(100vw / 3);
+  flex-wrap: wrap;
 }
-.sponsor-row {
-  width: 100%;
-  height: 50%;
-}
+
 .sponsor-col-int {
+  height: 50%;
   width: 50%;
-  height: 100%;
   justify-content: center;
   align-items: center;
+  border: 15px solid transparent;
 }
-.sponsor-row img {
-  width: 50%;
+.sponsor-col-int:hover {
+  border: 15px solid rgba(255,255,255,0.5)
+}
+.sponsor-col-int img {
+  width: calc(50% + 30px);
+  filter: invert(99%) sepia(81%) saturate(0%) hue-rotate(227deg) brightness(109%) contrast(100%);
 }
 .sponsor-col-ext.center {
   padding: 50px;
@@ -312,7 +311,7 @@ img {
 .answer i {
   cursor: pointer;
 }
-.question:hover h4 {
+.question-container:hover h5 {
   display: block;
   margin-top: 20px;
 }
@@ -337,7 +336,6 @@ footer li {
   margin-bottom: 15px;
 }
 footer h3 {
-  font-size: 1.5rem;
   margin-bottom: 30px;
 }
 .language,
