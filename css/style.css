@@ -22,10 +22,18 @@
 /* ! Generics  */
 body {
   font-family: "Open Sans", sans-serif;
+  padding-top: 80px;
 }
 
 header {
   height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 -1px 5px black;
 }
 
 a {
@@ -49,6 +57,12 @@ p {
 footer {
   color: white;
 }
+ul {
+  list-style-type: none;
+}
+img {
+  display: inline-block;
+}
 /* ! Header  */
 
 .nav-header {
@@ -57,7 +71,6 @@ footer {
 }
 
 .nav-header img {
-  display: inline-block;
   vertical-align: middle;
 }
 .nav-options {
