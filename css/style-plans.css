@@ -1,0 +1,249 @@
+/* ! Root  */
+:root {
+  --lightblue: #b4d0e7;
+  --skyblue: #0093ce;
+  --blue: #0061ff;
+  --darkblue: #0d2481;
+  --lightgreen: #a2d39b;
+  --red: #ff1c1c;
+  --darkred: #d5001f;
+  --winered: #61082b;
+  --yellow: #ffd830;
+  --gray: #f5f5f5;
+  --bgcgray: #f7f5f2;
+}
+
+/*  ! Reset  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ! Generics  */
+body {
+  font-family: "Familjen Grotesk", sans-serif;
+  padding-top: 80px;
+  background-color: var(--bgcgray);
+}
+
+header {
+  height: 80px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0 -1px 5px black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+footer {
+  color: white;
+}
+ul {
+  list-style-type: none;
+}
+img {
+  display: inline-block;
+}
+/* ! Header  */
+
+.nav-header {
+  justify-content: space-between;
+  height: 80px;
+}
+
+.nav-header img {
+  vertical-align: middle;
+  height: 100%;
+}
+.nav-options {
+  align-items: center;
+}
+.nav-options-right a {
+  padding: 29px 20px;
+}
+.nav-options-left a {
+  padding: 31px 20px;
+}
+.nav-options a:hover {
+  box-shadow: inset 0 -3px 0px 0 cornflowerblue;
+}
+
+/* ! Jumbotron  */
+.jumbotron {
+  text-align: center;
+  margin: 0 auto;
+}
+.jumbotron h1 {
+  padding: 70px 0 20px 0;
+}
+.jumbo-icons {
+  margin: 50px 0;
+}
+
+/* ! Plans Cards  */
+
+/* Cards */
+.card-row {
+  width: 100%;
+  flex-wrap: wrap;
+}
+.card {
+  flex-basis: calc(100% / 3);
+}
+
+/* ! Utilities */
+.flex {
+  display: flex;
+}
+.a-reset {
+  color: blue;
+  text-decoration: underline;
+}
+.break-line {
+  width: 50px;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
+.break-line-lg {
+  width: 100px;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
+.break-line-xxl {
+  width: 100%;
+  margin: 40px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+/* Container  */
+.wrap-lg {
+  height: 750px;
+}
+.wrap-sm {
+  height: 350px;
+}
+.container-lg {
+  width: 1200px;
+  margin: 0 auto;
+}
+.container-md {
+  width: 1000px;
+  margin: 0 auto;
+}
+.container-sm {
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* Buttons  */
+.btn-lg a {
+  margin: 30px 0;
+  width: 230px;
+  padding: 15px;
+  background-color: var(--blue);
+  text-align: center;
+  display: inline-block;
+}
+.btn-lg a:hover,
+.btn-xs:hover {
+  opacity: 0.8;
+}
+.btn-xs {
+  color: white;
+  background-color: var(--blue);
+  padding: 7px 15px;
+}
+
+.btn-partner a {
+  border: 1px solid black;
+  padding: 15px;
+  display: inline-block;
+  margin-top: 20px;
+}
+.btn-partner a:hover {
+  /* background-color: rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0px 10px black;
+}
+
+.btn-lg a {
+  color: white;
+}
+/* Columns  */
+.col-xxs {
+  width: 15%;
+}
+.col-sm {
+  width: 40%;
+}
+.col-md {
+  width: 60%;
+}
+.col-xs {
+  width: 30%;
+}
+.col-lg {
+  width: 70%;
+}
+.col-xl {
+  width: 85%;
+}
+
+/* Background Colors */
+.lightblue {
+  background-color: var(--lightblue);
+}
+.blue {
+  background-color: var(--blue);
+}
+.skyblue {
+  background-color: var(--skyblue);
+}
+.lightgreen {
+  background-color: var(--lightgreen);
+}
+.winered {
+  background-color: var(--winered);
+}
+.red {
+  background-color: var(--red);
+}
+.darkred {
+  background-color: var(--darkred);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.darkblue {
+  background-color: var(--darkblue);
+}
+.gray {
+  background-color: var(--gray);
+}
+.black {
+  background-color: black;
+}
+/* Debug */
+.debug {
+  border: 2px dashed black;
+}
