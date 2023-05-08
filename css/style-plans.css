@@ -11,6 +11,11 @@
   --yellow: #ffd830;
   --gray: #f5f5f5;
   --bgcgray: #f7f5f2;
+
+  --tb1: #faf9f7;
+  --tb2: #f7f5f2;
+  --tb3: #f2eee8;
+  --tb4: #eee9e2;
 }
 
 /*  ! Reset  */
@@ -164,6 +169,7 @@ img {
 .table table {
   width: 100%;
   margin-bottom: 500px;
+  border-collapse: collapse;
 }
 
 .table tr {
@@ -172,12 +178,25 @@ img {
 .table th {
   width: calc(100% / 6);
 }
+.table td,
+.table th,
+.table table {
+  border-style: none;
+  border: 1px solid black;
+}
 .ta-left {
   text-align: left;
 }
 .table div {
   padding: 0 20px;
   margin: 15px 0;
+}
+.table tbody .table-header {
+  text-align: left;
+  width: 100%;
+}
+.col-0 {
+  width: 100%;
 }
 /* ! Utilities */
 .grid {
@@ -320,6 +339,22 @@ img {
 }
 .black {
   background-color: black;
+}
+/* Table colors  */
+.tbgc-0 {
+  background-color: #fff;
+}
+.tbgc-1 {
+  background-color: var(--tb1);
+}
+.tbgc-2 {
+  background-color: var(--tb2);
+}
+.tbgc-3 {
+  background-color: var(--tb3);
+}
+.tbgc-4 {
+  background-color: var(--tb4);
 }
 /* Debug */
 .debug {
